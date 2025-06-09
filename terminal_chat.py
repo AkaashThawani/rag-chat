@@ -8,7 +8,7 @@ key = os.getenv("GOOGLE_API_KEY")
 genai.configure(api_key=key)
 
 try:
-    model = genai.GenerativeModel("gemini-2.0-flash")
+    model = genai.GenerativeModel("gemini-1.5-flash")
 except Exception as e:
     raise ValueError(f"Failed to get model: {e}")
 
